@@ -6,307 +6,125 @@
 ![React](https://img.shields.io/badge/React-19.2.3-61DAFB?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript)
 ![MongoDB](https://img.shields.io/badge/MongoDB-7.0-47A248?style=for-the-badge&logo=mongodb)
-![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel)
 
-一個展示現代全端開發技術的 Todo List 應用程式，採用 Next.js 15 App Router、Server Actions、MongoDB 與完整的 CI/CD 流程。
+現代化全端 Todo List 應用，展示 Next.js 15、Server Actions、MongoDB 與完整 CI/CD 流程。
 
-[🚀 Live Demo](https://nextjs-mongodb-todo.vercel.app) | [📖 開發記錄](./DEVELOPMENT_RECORD.md) | [🔧 部署指南](https://github.com/ken123183/nextjs-mongodb-todo/blob/main/DEVELOPMENT_RECORD.md#phase-10-vercel-部署)
+**[🚀 Live Demo](https://nextjs-mongodb-todo.vercel.app)** | **[📖 完整開發記錄](./DEVELOPMENT_RECORD.md)**
 
 </div>
 
 ---
 
-## 🎯 專案目標
+## 🎯 專案簡介
 
-本專案為 **Viibe Coding 練習專案**，旨在透過 AI 輔助開發，實踐現代全端技術棧與最佳開發流程：
+本專案為 **Viibe Coding 練習作品**，使用 AI 輔助開發，在 **4 小時內**完成從規劃到生產環境部署的完整全端應用。
 
-### 學習目標
-- ✅ 掌握 Next.js 15 App Router 與 Server Components/Actions
-- ✅ 實作完整的 CI/CD 自動化流程
-- ✅ 建立專業級的測試與部署環境
-- ✅ 使用 Docker 確保開發環境一致性
-- ✅ 遵循 Git Flow 分支管理策略
+**核心目標**：
+- 實踐 Next.js 15 App Router 與 React 19 Server Components
+- 建立專業級 CI/CD 自動化流程（GitHub Actions + Vercel）
+- 展示現代化測試與部署最佳實踐
+- 使用 Docker 確保開發環境一致性
 
-### 技術實踐
-- **前端**: React 19 Server/Client Components, shadcn/ui, Tailwind CSS
-- **後端**: Next.js Server Actions, MongoDB (Mongoose), Zod 驗證
-- **測試**: Vitest, React Testing Library, 整合測試
-- **CI/CD**: GitHub Actions (Test/Lint/TypeCheck), Vercel 自動部署
-- **開發**: Docker 容器化, TypeScript 嚴格模式
+**技術棧**：Next.js 15 · React 19 · TypeScript · MongoDB · Vitest · Docker · GitHub Actions · Vercel
 
 ---
 
-## ✨ 核心特色
+## ✨ 技術亮點
 
-### 🎨 專業 UI 設計
-- **VS Code Dark Mode 主題** - 深色模式設計，色彩靈感來自 VS Code
-- **shadcn/ui 元件庫** - 現代化、可訪問性優先的 UI 元件
-- **響應式佈局** - 完美適配各種裝置尺寸
+### 🎨 現代化架構
+- **Server Actions** - 零 API routes，型別安全的資料操作
+- **React 19 Concurrent** - `useTransition` 實現流暢 UI 更新
+- **VS Code Dark Theme** - 專業深色模式設計
 
-### ⚡ 現代化架構
-- **Server Actions** - 零 API routes，型別安全的資料變更
-- **React 19 Concurrent Features** - `useTransition` 實現流暢的 UI 更新
-- **Progressive Enhancement** - 無 JavaScript 也能部分運作
+### 🧪 完整測試與 CI/CD
+- **三層自動化檢查** - Test → Lint → Type Check
+- **整合測試覆蓋** - 完整 CRUD 流程與資料庫互動（41% coverage）
+- **分支保護策略** - PR 必須通過所有檢查才能合併到 `main`
 
-### 🧪 完整測試覆蓋
-- **整合測試** - 涵蓋完整 CRUD 流程與資料庫互動
-- **CI 自動化** - 每次 commit 自動執行測試與型別檢查
-- **Coverage 報告** - 自動生成並追蹤測試覆蓋率
-
-### 🚀 專業部署流程
-- **三層 CI 檢查** - Test → Lint → Type Check
-- **分支保護策略** - PR 必須通過所有檢查才能合併
-- **自動化部署** - 推送到 GitHub 立即部署到 Vercel
-- **Preview Deployments** - 每個 PR 都有獨立預覽環境
+### 🚀 自動化部署
+- **Production** - `main` 分支自動部署到 Vercel
+- **Preview** - 每個分支和 PR 都有獨立預覽環境
+- **Build 時間** - ~2 分鐘
 
 ---
 
 ## 🛠️ 技術棧
 
-### 核心框架
-- **[Next.js 15](https://nextjs.org/)** - React 全端框架（App Router）
-- **[React 19](https://react.dev/)** - UI 函式庫（Server Components）
-- **[TypeScript](https://www.typescriptlang.org/)** - 型別安全
-
-### 後端 & 資料庫
-- **[MongoDB](https://www.mongodb.com/)** - NoSQL 資料庫
-- **[Mongoose](https://mongoosejs.com/)** - ODM（物件文件映射）
-- **[Zod](https://zod.dev/)** - Schema 驗證
-
-### UI & 樣式
-- **[shadcn/ui](https://ui.shadcn.com/)** - 可組合的 UI 元件
-- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS 框架
-- **[Lucide Icons](https://lucide.dev/)** - 現代 icon 庫
-
-### 測試 & 品質
-- **[Vitest](https://vitest.dev/)** - 單元與整合測試框架
-- **[React Testing Library](https://testing-library.com/react)** - React 測試工具
-- **[ESLint](https://eslint.org/)** - 程式碼風格檢查
-
-### 開發 & 部署
-- **[Docker](https://www.docker.com/)** - 容器化開發環境
-- **[GitHub Actions](https://github.com/features/actions)** - CI/CD 自動化
-- **[Vercel](https://vercel.com/)** - 無伺服器部署平台
-
----
-
-## 📦 專案結構
-
-```
-nextjs-mongodb-todo/
-├── .github/
-│   └── workflows/
-│       └── ci.yml              # CI/CD 自動化流程
-├── src/
-│   ├── app/
-│   │   ├── globals.css         # VS Code 主題樣式
-│   │   ├── layout.tsx
-│   │   └── page.tsx
-│   ├── components/
-│   │   ├── todo/
-│   │   │   ├── AddTodo.tsx     # 新增表單 (Client)
-│   │   │   ├── TodoItem.tsx    # 待辦項目 (Client)
-│   │   │   └── TodoList.tsx    # 列表容器 (Server)
-│   │   └── ui/                 # shadcn/ui 元件
-│   ├── lib/
-│   │   └── db.ts               # MongoDB 連線工具
-│   ├── server/
-│   │   ├── actions.ts          # Server Actions (CRUD)
-│   │   └── models/
-│   │       └── Todo.ts         # Mongoose Schema
-│   └── tests/
-│       ├── setup.ts
-│       └── integration/
-│           └── todo-crud.test.ts
-├── .env.example                # 環境變數範本
-├── DEVELOPMENT_RECORD.md       # 完整開發記錄
-├── vercel.json                 # Vercel 部署配置
-└── vitest.config.mts           # Vitest 測試配置
-```
+| 類別 | 技術 |
+|------|------|
+| **框架** | Next.js 15, React 19, TypeScript |
+| **資料庫** | MongoDB (Mongoose), Zod 驗證 |
+| **UI** | shadcn/ui, Tailwind CSS, Lucide Icons |
+| **測試** | Vitest, React Testing Library |
+| **CI/CD** | GitHub Actions, Vercel, Docker |
 
 ---
 
 ## 🚀 快速開始
 
-### 前置需求
-- Node.js 20+
-- Docker Desktop
-- MongoDB Atlas 帳號（或本地 MongoDB）
-
-### 1. Clone Repository
 ```bash
+# Clone 專案
 git clone https://github.com/ken123183/nextjs-mongodb-todo.git
 cd nextjs-mongodb-todo
-```
 
-### 2. 設定環境變數
-```bash
+# 設定環境變數
 cp .env.example .env.local
-# 編輯 .env.local，填入您的 MongoDB URI
+# 編輯 .env.local，填入 MongoDB URI
+
+# 使用 Docker 啟動（推薦）
+docker run -it --rm -v ${PWD}:/app -w /app -p 3000:3000 node:24-alpine sh -c "npm install && npm run dev"
+
+# 訪問 http://localhost:3000
 ```
 
-### 3. 安裝依賴（使用 Docker）
+**執行測試**：
 ```bash
-docker run --rm -v ${PWD}:/app -w /app node:24-alpine npm install
-```
-
-### 4. 啟動開發伺服器
-```bash
-docker run -it --rm -v ${PWD}:/app -w /app -p 3000:3000 node:24-alpine npm run dev
-```
-
-開啟瀏覽器訪問 http://localhost:3000
-
-### 5. 執行測試
-```bash
-docker run --rm -v ${PWD}:/app -w /app node:24-alpine npm run test
+docker run --rm -v ${PWD}:/app -w /app node:24-alpine npm run test:coverage
 ```
 
 ---
 
-## 🧪 測試
+## 💼 專案成果
 
-### 執行所有測試
-```bash
-npm run test
-```
-
-### 執行測試並生成覆蓋率報告
-```bash
-npm run test:coverage
-# 開啟 coverage/index.html 查看詳細報告
-```
-
-### CI 自動化測試
-每次推送到 GitHub 都會自動執行：
-- ✅ Vitest 整合測試（包含 MongoDB service）
-- ✅ ESLint 程式碼風格檢查
-- ✅ TypeScript 型別驗證
-
----
-
-## 📈 技術亮點
-
-### 1. Next.js 15 最佳實踐
-- **Server Components** - 預設使用，減少客戶端 JavaScript
-- **Server Actions** - 型別安全的資料變更，無需 API routes
-- **React 19 Concurrent** - `useTransition` 保持 UI 響應性
-
-### 2. 完整的 CI/CD 流程
-```
-Push → CI (Test/Lint/TypeCheck) → Vercel Deploy (Auto)
-       ↓
-   通過所有檢查
-       ↓
-   Production/Preview
-```
-
-### 3. Git Flow 分支策略
-- `main` - Production 環境（需 PR + CI 通過）
-- `dev` - 開發環境（自動部署到 Preview）
-- Feature branches - 獨立功能開發
-
-### 4. Docker 開發環境
-所有操作都在 Docker 容器內執行，確保：
-- ✅ 環境一致性（本地 ≈ CI ≈ Production）
-- ✅ 無需本地安裝 Node.js
-- ✅ 隔離依賴衝突
-
----
-
-## 🎨 UI 設計理念
-
-### VS Code Dark+ 配色方案
-| 元素 | 顏色 | 說明 |
-|------|------|------|
-| 背景 | `#1e1e1e` | VS Code 編輯器背景 |
-| 卡片 | `#252526` | 側邊欄背景色 |
-| 主色 | `#007acc` | VS Code 標誌藍 |
-| 邊框 | `#3e3e42` | 微妙的分界線 |
-| 文字 | `#d4d4d4` | 主要文字顏色 |
-
-### 設計原則
-- **一致性** - 遵循 VS Code 視覺語言
-- **可讀性** - 高對比度，適合長時間使用
-- **專業感** - 適合開發者工具的美學
-
----
-
-## 🔧 部署
-
-### Vercel 自動部署
-專案已設定 Vercel 自動部署：
-- **Production**: `main` 分支 → https://nextjs-mongodb-todo.vercel.app
-- **Preview**: 所有分支和 PR 都有獨立的預覽 URL
-
-### 環境變數設定
-在 Vercel Dashboard 設定：
-```bash
-MONGODB_URI=mongodb+srv://...
-NEXTAUTH_SECRET=<使用 openssl rand -base64 32 生成>
-NEXTAUTH_URL=https://your-app.vercel.app
-```
-
-完整部署指南請參考 [DEVELOPMENT_RECORD.md](./DEVELOPMENT_RECORD.md#phase-10-vercel-部署)
-
----
-
-## 📚 學習資源
-
-### 官方文件
-- [Next.js 15 文件](https://nextjs.org/docs)
-- [React 19 文件](https://react.dev/)
-- [MongoDB Atlas](https://www.mongodb.com/atlas)
-- [Vitest 文件](https://vitest.dev/)
-
-### 相關教學
-- [Next.js Server Actions](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations)
-- [React Server Components](https://react.dev/blog/2023/03/22/react-labs-what-we-have-been-working-on-march-2023#react-server-components)
-- [GitHub Actions CI/CD](https://docs.github.com/en/actions/automating-builds-and-tests)
-
----
-
-## 💼 關於本專案
-
-### 開發背景
-本專案為面試作品集的一部分，展示：
-- ✅ **全端開發能力** - 從資料庫到 UI 的完整掌握
-- ✅ **現代化技術棧** - 熟悉最新的 React 和 Next.js 特性
-- ✅ **專業開發流程** - CI/CD、測試、文檔、部署
-- ✅ **問題解決能力** - 參見 [DEVELOPMENT_RECORD.md](./DEVELOPMENT_RECORD.md) 的故障排除章節
-- ✅ **AI 協作經驗** - 善用 AI 工具提升開發效率
-
-### 量化成果
-- **開發時間**: ~4 小時（包含測試與部署）
-- **測試覆蓋率**: 41%（核心 CRUD 功能完整覆蓋）
-- **CI/CD 成功率**: 100%（經過除錯與優化）
-- **Build 時間**: ~2 分鐘（Vercel 部署）
-- **Commits**: 15+ 次專業 commit message
+### 量化指標
+- ⏱️ **開發時間**：~4 小時（含測試與部署）
+- ✅ **CI/CD 成功率**：100%（經除錯優化）
+- 📊 **測試覆蓋率**：41%（核心 CRUD 完整覆蓋）
+- 🚀 **部署速度**：~2 分鐘 Vercel build
 
 ### 技術挑戰與解決
-1. **ESLint 型別錯誤** → 建立完整的型別系統
-2. **Coverage 門檻過高** → 調整 CI 策略，保留報告但不阻斷部署
-3. **MongoDB URI 解析錯誤** → 識別並修正連線字串格式問題
-4. **Docker 環境配置** → 確保本地、CI、生產環境一致性
+1. **ESLint 型別錯誤** → 建立完整 TypeScript 型別系統
+2. **Coverage 策略調整** → 移除強制門檻，保留報告生成
+3. **MongoDB URI 解析** → 識別並修正連線字串格式
+4. **Docker 環境配置** → 確保本地/CI/生產環境一致
+
+完整開發過程與問題排查請見 **[DEVELOPMENT_RECORD.md](./DEVELOPMENT_RECORD.md)**
 
 ---
 
-## 🤝 貢獻
+## 📚 專案結構
 
-歡迎提出 Issue 或 Pull Request！
-
-### 開發流程
-1. Fork 本專案
-2. 建立功能分支 (`git checkout -b feature/amazing-feature`)
-3. Commit 變更 (`git commit -m 'feat: add amazing feature'`)
-4. Push 到分支 (`git push origin feature/amazing-feature`)
-5. 開啟 Pull Request
+```
+src/
+├── app/              # Next.js App Router
+├── components/
+│   ├── todo/         # Todo 相關元件（AddTodo, TodoItem, TodoList）
+│   └── ui/           # shadcn/ui 元件庫
+├── server/
+│   ├── actions.ts    # Server Actions (CRUD)
+│   └── models/       # Mongoose Schema
+└── tests/
+    └── integration/  # 整合測試
+```
 
 ---
 
-## 📝 授權
+## 🎓 學習資源
 
-MIT License
+- **完整開發記錄**：[DEVELOPMENT_RECORD.md](./DEVELOPMENT_RECORD.md) - 包含所有 prompts、實作步驟、問題排查
+- [Next.js 15 文件](https://nextjs.org/docs)
+- [React Server Actions](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations)
+- [Vercel 部署指南](https://vercel.com/docs)
 
 ---
 
@@ -314,7 +132,6 @@ MIT License
 
 **ken123183**
 
-- GitHub: [@ken123183](https://github.com/ken123183)
 - 專案連結: [nextjs-mongodb-todo](https://github.com/ken123183/nextjs-mongodb-todo)
 - Live Demo: [https://nextjs-mongodb-todo.vercel.app](https://nextjs-mongodb-todo.vercel.app)
 
@@ -322,8 +139,8 @@ MIT License
 
 <div align="center">
 
-**⭐ 如果這個專案對您有幫助，請給個 Star！**
-
 Made with ❤️ using Next.js 15 & Viibe Coding
+
+**⭐ 如果這個專案對您有幫助，請給個 Star！**
 
 </div>
