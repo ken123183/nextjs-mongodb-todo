@@ -60,14 +60,6 @@ jobs:
           name: codecov-umbrella
           fail_ci_if_error: false
 
-      - name: Comment PR with coverage
-        if: github.event_name == 'pull_request'
-        uses: romeovs/lcov-reporter-action@v0.3.1
-        with:
-          lcov-file: ./coverage/lcov.info
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          delete-old-comments: true
-
   lint:
     name: Lint Code
     runs-on: ubuntu-latest
