@@ -3,7 +3,7 @@
 
 import { revalidatePath } from 'next/cache';
 import connectToDatabase from '@/lib/db';
-import Todo, { ITodo } from '@/server/models/Todo';
+import Todo from '@/server/models/Todo';
 import { z } from 'zod';
 
 // Zod schema for input validation
