@@ -1008,5 +1008,5 @@ RequestError [HttpError]: Resource not accessible by integration (403)
 **Live Demo**: https://nextjs-mongodb-todo.vercel.app
 
 **開發者**: ken123183  
-**AI 協助**: Viibe Coding / Antigravity  
+**AI 協助**: Vibe Coding / Antigravity  
 **完成日期**: 2026-02-11

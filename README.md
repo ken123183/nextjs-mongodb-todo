@@ -17,7 +17,7 @@
 
 ## 🎯 專案簡介
 
-本專案為 **Viibe Coding 練習作品**，使用 AI 輔助開發，在 **4 小時內**完成從規劃到生產環境部署的完整全端應用。
+本專案為 **Vibe Coding 練習作品**，使用 AI 輔助開發，在 **4 小時內**完成從規劃到生產環境部署的完整全端應用。
 
 **核心目標**：
 - 實踐 Next.js 15 App Router 與 React 19 Server Components
@@ -139,7 +139,7 @@ src/
 
 <div align="center">
 
-Made with ❤️ using Next.js 15 & Viibe Coding
+Made with ❤️ using Next.js 15 & Vibe Coding
 
 **⭐ 如果這個專案對您有幫助，請給個 Star！**
 
