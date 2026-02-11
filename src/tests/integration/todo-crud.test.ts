@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 import connectToDatabase from '@/lib/db';
 import Todo from '@/server/models/Todo';
 import { createTodo, getTodos, toggleTodo, deleteTodo } from '@/server/actions';
+import type { Todo as TodoType } from '@/types';
 
 describe('Todo CRUD Integration', () => {
     // Connect to DB before tests
@@ -27,7 +28,7 @@ describe('Todo CRUD Integration', () => {
         expect(result.success).toBe(true);
 
         const todos = await getTodos();
-        const createdTodo = todos.find((t: any) => t.content === 'Integration Test Todo');
+        const createdTodo = todos.find((t: TodoType) => t.content === 'Integration Test Todo');
         expect(createdTodo).toBeDefined();
         createdTodoId = createdTodo._id;
     });
@@ -43,8 +44,8 @@ describe('Todo CRUD Integration', () => {
         expect(result.success).toBe(true);
 
         const todos = await getTodos();
-        const updatedTodo = todos.find((t: any) => t._id === createdTodoId);
-        expect(updatedTodo.completed).toBe(true);
+        const updatedTodo = todos.find((t: TodoType) => t._id === createdTodoId);
+        expect(updatedTodo?.completed).toBe(true);
     });
 
     it('should delete todo', async () => {
@@ -52,7 +53,7 @@ describe('Todo CRUD Integration', () => {
         expect(result.success).toBe(true);
 
         const todos = await getTodos();
-        const deletedTodo = todos.find((t: any) => t._id === createdTodoId);
+        const deletedTodo = todos.find((t: TodoType) => t._id === createdTodoId);
         expect(deletedTodo).toBeUndefined();
     });
 });
